@@ -8,7 +8,7 @@ public abstract class Cell implements AdjacentCell{
 
     public void markAsMine(){
         if(revealed){
-            throw new GameOver("Tried to mark a revealed cell!");
+            throw new GameOver("¡Se trató de marcar una celda revelada!");
         }
 
         if(!markedAsMine){

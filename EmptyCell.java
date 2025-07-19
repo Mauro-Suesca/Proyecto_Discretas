@@ -14,7 +14,7 @@ public class EmptyCell extends Cell{
 
     @Override public void reveal(){
         if(markedAsMine){
-            throw new GameOver("Tried to reveal a marked mine!");
+            throw new GameOver("¡Se trató de revelar una mina marcada!");
         }
 
         if(!revealed){
@@ -25,7 +25,7 @@ public class EmptyCell extends Cell{
     }
 
     @Override public void markAsMine() throws GameOver{
-        throw new GameOver("Tried to mark an empty cell as a mine!");
+        throw new GameOver("¡Se trató de marcar una celda vacía!");
     }
 
     @Override public void reactToCellReveal(Cell revealedCell){
